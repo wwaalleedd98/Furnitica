@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('vater');
+// });
+
+Route::prefix('/')->group(function(){
+    Route::view('/', 'cms.vater');
 });
